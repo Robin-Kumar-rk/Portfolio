@@ -3,72 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin Kumar - Portfolio</title>
+    <title>Robin Kumar | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
 
-    <header>
-        <h1>Robin Kumar</h1>
-        <h2>B.Tech Student | Android Developer | Competitive Programmer</h2>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Robin Kumar</h1>
+                <h2>Android Developer & Competitive Programmer</h2>
+                <p>B.Tech Student at IMSEC, Ghaziabad</p>
+                <div class="social-links">
+                    <a href="https://github.com/Robin-Kumar-rk" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/robin-kumar-rk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/robin_kumar_rk/" target="_blank"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/profile.jpg" alt="Robin Kumar" class="profile-image">
+            </div>
+        </div>
     </header>
 
-    <nav>
+    <nav class="main-nav">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>
-            I am a 2nd-year B.Tech student at IMSEC, Ghaziabad, affiliated with AKTU. I specialize in Android app development using Kotlin and Jetpack Compose. I am passionate about solving algorithmic problems and have a strong foundation in Java, C, and Kotlin.
-        </p>
-    </section>
+    <main>
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a passionate 2nd-year B.Tech student specializing in Android app development using Kotlin and Jetpack Compose. With a strong foundation in Java, C, and Kotlin, I combine my technical skills with creative problem-solving abilities to build innovative mobile applications.</p>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>Java</li>
-            <li>C</li>
-            <li>Kotlin</li>
-            <li>Android App Development</li>
-            <li>Jetpack Compose</li>
-            <li>Python (Basic)</li>
-        </ul>
-    </section>
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>C</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-android"></i>
+                    <h3>Kotlin</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Android Development</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Jetpack Compose</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h3>Projects</h3>
-        <ul>
-            <li><a href="https://github.com/Robin-Kumar-rk/SudokuSolverApp">Sudoku Solver App</a></li>
-            <li><a href="https://github.com/Robin-Kumar-rk/TicTacToeApp">Tic Tac Toe App</a></li>
-            <li><a href="https://github.com/Robin-Kumar-rk/TimeTableApp.git">Timetable App for College</a></li>            
-        </ul>
-    </section>
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Sudoku Solver App</h3>
+                    <p>An Android application that solves Sudoku puzzles using advanced algorithms.</p>
+                    <a href="https://github.com/Robin-Kumar-rk/SudokuSolverApp" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Tic Tac Toe App</h3>
+                    <p>A modern implementation of the classic game with AI opponent.</p>
+                    <a href="https://github.com/Robin-Kumar-rk/TicTacToeApp" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Timetable App</h3>
+                    <p>A college timetable management application for students.</p>
+                    <a href="https://github.com/Robin-Kumar-rk/TimeTableApp.git" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="achievements">
-        <h3>Achievements</h3>
-        <ul>
-            <li>Knight Badge on LeetCode</li>
-            <li>1000+ LeetCode Problems Solved</li>
-            <li>Top 6.65% in LeetCode Weekly Contest 418</li>
-        </ul>
-    </section>
+        <section id="achievements" class="section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Knight Badge</h3>
+                    <p>Earned on LeetCode</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-code"></i>
+                    <h3>1000+ Problems</h3>
+                    <p>Solved on LeetCode</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Top 6.65%</h3>
+                    <p>LeetCode Weekly Contest 418</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:robinkumarrk2005@gmail.com">robinkumarrk2005@gmail.com</a></p>
-        <p>Phone: <a href="tel:+919927565646">+91 9927565646</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/robin-kumar-rk/">Robin Kumar</a></p>
-        <p>GitHub: <a href="https://github.com/Robin-Kumar-rk">Robin-Kumar-rk</a></p>
-        <p>LeetCode: <a href="https://leetcode.com/u/robin_kumar_rk/">robin_kumar_rk</a></p>
-    </section>
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:robinkumarrk2005@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>robinkumarrk2005@gmail.com</span>
+                    </a>
+                    <a href="tel:+919927565646" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9927565646</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Robin Kumar. All Rights Reserved.</p>
