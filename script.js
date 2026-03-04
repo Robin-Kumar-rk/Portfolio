@@ -49,7 +49,7 @@ window.addEventListener('scroll', () => {
 
 // Typewriter Effect
 const typewriterElement = document.getElementById('typewriter');
-const phrases = ['Android Developer', 'Competitive Programmer'];
+const phrases = ['an Android Developer', 'a Competitive Programmer'];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

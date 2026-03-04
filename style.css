@@ -550,6 +550,11 @@ ul {
     color: var(--text-muted);
 }
 
+.project-links {
+    display: flex;
+    gap: 30px; /* adjust the space as you like */
+}
+
 .project-links a:hover {
     color: var(--text-main);
 }
